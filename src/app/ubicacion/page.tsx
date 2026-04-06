@@ -89,9 +89,9 @@ export default function Ubicacion() {
               </div>
               <div>
                 <h3 className={`${amatic.className} text-2xl text-white mb-2`}>Dirección</h3>
-                <p className="text-white text-lg mb-1">Av. de los Restaurantes 123</p>
-                <p className="text-white text-lg mb-1">Col. Centro</p>
-                <p className="text-white text-lg">Ciudad de México, CP 12345</p>
+                <p className="text-white text-lg mb-1">160 26th St NE</p>
+                <p className="text-white text-lg mb-1">Owatonna, MN 55060</p>
+                <p className="text-white text-lg">Estados Unidos</p>
               </div>
             </div>
           </motion.div>
@@ -109,16 +109,8 @@ export default function Ubicacion() {
               </div>
               <div>
                 <h3 className={`${amatic.className} text-2xl text-white mb-2`}>Horario</h3>
-                <div className="grid grid-cols-2 gap-2">
-                  <p className="text-white text-lg">Lunes - Jueves:</p>
-                  <p className="text-white text-lg">12:00 - 22:00</p>
-                  
-                  <p className="text-white text-lg">Viernes - Sábado:</p>
-                  <p className="text-white text-lg">12:00 - 00:00</p>
-                  
-                  <p className="text-white text-lg">Domingo:</p>
-                  <p className="text-white text-lg">12:00 - 20:00</p>
-                </div>
+                <p className="text-white text-lg">Lunes - Domingo:</p>
+                <p className="text-white text-lg">11:00 am - 10:00 pm</p>
               </div>
             </div>
           </motion.div>
@@ -136,8 +128,9 @@ export default function Ubicacion() {
               </div>
               <div>
                 <h3 className={`${amatic.className} text-2xl text-white mb-2`}>Contacto</h3>
-                <p className="text-white text-lg mb-1">Teléfono: (55) 1234-5678</p>
-                <p className="text-white text-lg">Email: info@plazamorena.com</p>
+                <p className="text-white text-lg mb-1">Teléfono:</p>
+                <p className="text-white text-lg mb-1">507-413-0819</p>
+                <p className="text-white text-lg mb-1">507-413-0817</p>
               </div>
             </div>
           </motion.div>
@@ -163,27 +156,18 @@ export default function Ubicacion() {
           transition={{ duration: 0.7, delay: 0.3 }}
           className="lg:w-1/2 h-[500px] rounded-xl overflow-hidden shadow-2xl"
         >
-          {/* Aquí puedes integrar un mapa real con Google Maps o mostrar una imagen */}
-          <div className="w-full h-full bg-white/20 backdrop-blur-sm p-2">
-            <div className="bg-white/10 w-full h-full rounded-lg flex items-center justify-center">
-              <div className="text-center">
-                <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16 text-white/70 mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
-                </svg>
-                <p className="text-white text-xl">Mapa interactivo</p>
-                <p className="text-white/70 mt-2">Aquí se mostrará el mapa con nuestra ubicación</p>
-              </div>
-            </div>
-          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d851.6860987450606!2d-93.22440878568477!3d44.109786748661705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87f6e667adbb62bb%3A0x26b855a6439e0a09!2sPlaza%20Morena%20Campestre%20Grill!5e0!3m2!1ses-419!2sco!4v1775414790223!5m2!1ses-419!2sco"
+            width="600"
+            height="450"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            className="w-full h-full"
+          />
         </motion.div>
       </div>
-      <Link href="/nosotros" passHref>
-        <motion.button>Nosotros</motion.button>
-      </Link>
-
-      <Link href="/ubicacion" passHref>
-        <motion.button>Ubicación</motion.button>
-      </Link>
     </div>
   );
 }
