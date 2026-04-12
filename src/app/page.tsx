@@ -37,22 +37,22 @@ const exampleImages = [
 ];
 
 const foodImages = [
-  "/PLAZA+OW-850w.webp",
-  "/margaritas-cocktails.webp",
-  "/Guacamole-Autentico-1.webp",
-  "/plazam-181w.webp",
-  "/PLAZA+OW-850w.webp", // Reutilizado
-  "/Guacamole-Autentico-1.webp" // Reutilizado
+  "/platos_comida/camarones_alajo.jpeg",
+  "/platos_comida/coctel_DE_camaron.jpeg",
+  "/platos_comida/carnitas_meal.jpeg",
+  "/platos_comida/tacos_al_pastor.jpeg",
+  "/platos_comida/camarones_chipotle.jpeg",
+  "/platos_comida/mexicanpizza.jpeg"
 ];
 
 // Añadir esto cerca de tus otras constantes
 const externalImages = [
-  "https://www.exactchange.es/uploads/images/2021/03/tamales-comida-tipica-de-mexico-mejores-platos.png",  // Fajitas
-  "https://images.unsplash.com/photo-1575650772417-e6b418b0d106?q=80&w=1974",  // Margarita
-  "https://images.unsplash.com/photo-1584269655346-09fb3cc35df7?q=80&w=2071",  // Guacamole
-  "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?q=80&w=2070",     // Tacos
-  "https://images.unsplash.com/photo-1534352956036-cd81e27dd615?q=80&w=2036",  // Enchiladas
-  "https://images.unsplash.com/photo-1582169296194-e4d644c48063?q=80&w=2000"   // Nachos
+  "/platos_comida/camarones_alajo.jpeg",
+  "/platos_comida/coctel_DE_camaron.jpeg",
+  "/platos_comida/carnitas_meal.jpeg",
+  "/platos_comida/tacos_al_pastor.jpeg",
+  "/platos_comida/camarones_chipotle.jpeg",
+  "/platos_comida/mexicanpizza.jpeg"
 ];
 
 // Añade estas constantes después de tus arrays y antes de la función Home
@@ -68,46 +68,46 @@ export default function Home() {
   const router = useRouter();
   const foodItems = [
     {
-      name: "FAJITAS TRADICIONALES",
+      name: "CAMARONES AL AJO",
       image: foodImages[0],
-      externalImage: "/image.png",
-      description: "Nuestras deliciosas fajitas...",
-      price: "$18.99"
+      externalImage: "/platos_comida/camarones_alajo.jpeg",
+      description: "Deliciosos camarones frescos salteados al ajillo con especias tradicionales, acompañados de arroz español y verduras. Una especialidad de la casa que combina el sabor auténtico del mar con el aroma del ajo.",
+      price: "$15.99"
     },
     {
-      name: "MARGARITA CLÁSICA",
+      name: "COCTEL DE CAMARÓN",
       image: foodImages[1],
-      externalImage: "https://images.unsplash.com/photo-1575650772417-e6b418b0d106?q=80&w=1974",
-      description: "Margaritas preparadas...",
-      price: "$7.99"
+      externalImage: "/platos_comida/coctel_DE_camaron.jpeg",
+      description: "Refrescante cóctel con camarones frescos en salsa de tomate casera, acompañado con lima, cilantro y cebolla. Perfecto como entrante o para disfrutar con amigos.",
+      price: "$8.99"
     },
     {
-      name: "GUACAMOLE FRESCO",
+      name: "CARNITAS",
       image: foodImages[2],
-      externalImage: "https://images.unsplash.com/photo-1584269655346-09fb3cc35df7?q=80&w=2071",
-      description: "Guacamole auténtico mexicano, preparado en el momento con aguacates frescos, cilantro, cebolla y chile serrano. El acompañamiento perfecto para tus nachos o como entrada para compartir.",
-      price: "$6.50"
+      externalImage: "/platos_comida/carnitas_meal.jpeg",
+      description: "Auténticas carnitas de cerdo preparadas lentamente hasta obtener la mejor textura. Servidas con arroz, frijoles y nuestro delicioso guacamole fresco. El plato favorito de nuestros clientes.",
+      price: "$14.50"
     },
     {
       name: "TACOS AL PASTOR",
       image: foodImages[3],
-      externalImage: "https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?q=80&w=2070",
+      externalImage: "/platos_comida/tacos_al_pastor.jpeg",
       description: "Los mejores tacos de la ciudad con carne al pastor marinada en adobo tradicional y cocinada en trompo vertical, servidos con piña, cilantro, cebolla y nuestras salsas caseras de receta familiar.",
       price: "$12.99"
     },
     {
-      name: "ENCHILADAS SUIZAS",
+      name: "CAMARONES AL CHIPOTLE",
       image: foodImages[4],
-      externalImage: "https://images.unsplash.com/photo-1534352956036-cd81e27dd615?q=80&w=2036",
-      description: "Deliciosas enchiladas rellenas de pollo, bañadas en salsa verde cremosa y gratinadas con queso. Un clásico de la cocina mexicana con nuestro toque especial que te transportará a las calles de México.",
-      price: "$14.50"
+      externalImage: "/platos_comida/camarones_chipotle.jpeg",
+      description: "Camarones jugosos en una salsa cremosa de chipotle con un toque picante. Servidos sobre arroz esponjoso, hacen de este plato una experiencia culinaria inolvidable.",
+      price: "$16.50"
     },
     {
-      name: "NACHOS SUPREMOS",
+      name: "PIZZA MEXICANA",
       image: foodImages[5],
-      externalImage: "https://images.unsplash.com/photo-1582169296194-e4d644c48063?q=80&w=2000",
-      description: "Crujientes nachos cubiertos de queso fundido, frijoles refritos, jalapeños, guacamole fresco, crema agria y tu elección de pollo o carne asada. Perfectos para compartir y comenzar tu experiencia gastronómica.",
-      price: "$9.99"
+      externalImage: "/platos_comida/mexicanpizza.jpeg",
+      description: "Pizza artesanal con base crispy cubierta de carne molida, jalapeños frescos, queso derretido y salsa roja casera. Una fusión única entre la cocina mexicana e italiana.",
+      price: "$13.99"
     }
   ];
 
